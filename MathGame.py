@@ -95,10 +95,10 @@ def add_limits():
             print ("Sluttal 1 OK")
             print ()
             try:
-                end_two = int(input("Ange sluttal 2 (>=3 && >= sluttal 1):"))
+                end_two = int(input("Ange sluttal 2 (>=3 && <= sluttal 1):"))
             except ValueError:
                 end_two = None
-        if end_two != None and end_two >= 3 and end_two >= end_one:
+        if end_two != None and end_two >= 3 and end_two <= end_one:
             print ("Sluttal 2 OK")
             print ()
             print ("Spelet börjar strax")
